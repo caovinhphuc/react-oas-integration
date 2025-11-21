@@ -74,7 +74,7 @@ if [ -z "$(git status --porcelain)" ]; then
     git commit --allow-empty -m "${COMMIT_MESSAGE}"
 else
     echo -e "${GREEN}${CHECK} Changes detected${NC}"
-    
+
     # Step 2: Build frontend
     echo -e "${CYAN}${PACKAGE} Step 2: Building frontend...${NC}"
     npm run build
@@ -83,12 +83,12 @@ else
         exit 1
     fi
     echo -e "${GREEN}${CHECK} Frontend build successful${NC}"
-    
+
     # Step 3: Add all changes
     echo -e "${CYAN}${PACKAGE} Step 3: Adding changes to git...${NC}"
     git add .
     echo -e "${GREEN}${CHECK} All changes added${NC}"
-    
+
     # Step 4: Commit changes
     echo -e "${CYAN}${PACKAGE} Step 4: Committing changes...${NC}"
     git commit -m "${COMMIT_MESSAGE}"
