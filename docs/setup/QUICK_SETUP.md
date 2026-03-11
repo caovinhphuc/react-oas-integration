@@ -3,6 +3,7 @@
 ## Checklist - Các bước cần thiết
 
 ### ✅ 1. Google Cloud Setup
+
 - [ ] Tạo Google Cloud Project
 - [ ] Enable Google Sheets API
 - [ ] Enable Google Drive API
@@ -11,28 +12,33 @@
 - [ ] Ghi chú Service Account email: `_______________________`
 
 ### ✅ 2. Google Sheets Setup
+
 - [ ] Tạo Google Sheet mới
 - [ ] Copy Sheet ID từ URL: `_______________________`
 - [ ] Chia sẻ Sheet với Service Account email (quyền Editor)
 - [ ] Tạo các sheet con: Orders, Reports, Logs
 
 ### ✅ 3. Google Drive Setup
+
 - [ ] Tạo thư mục trên Google Drive
 - [ ] Copy Folder ID từ URL: `_______________________`
 - [ ] Chia sẻ thư mục với Service Account email (quyền Editor)
 
 ### ✅ 4. Email Setup (Gmail)
+
 - [ ] Bật 2-Step Verification
 - [ ] Tạo App Password
 - [ ] Ghi chú App Password: `_______________________`
 
 ### ✅ 5. Telegram Setup (Optional)
+
 - [ ] Tạo Telegram Bot qua @BotFather
 - [ ] Ghi chú Bot Token: `_______________________`
 - [ ] Gửi tin nhắn đầu tiên cho bot
 - [ ] Lấy Chat ID từ getUpdates API: `_______________________`
 
 ### ✅ 6. Cài đặt Project
+
 - [ ] Copy tất cả file code vào thư mục dự án
 - [ ] Chạy: `npm install`
 - [ ] Chạy: `npm install express nodemailer node-cron cors dotenv`
@@ -40,6 +46,7 @@
 - [ ] Cấu hình tất cả biến môi trường trong `.env`
 
 ### ✅ 7. Test & Run
+
 - [ ] Chạy backend: `node server.js`
 - [ ] Chạy frontend: `npm start`
 - [ ] Test từng tab: Sheets, Drive, Alerts, Reports
@@ -95,6 +102,7 @@ REACT_APP_ALERT_THRESHOLD_HIGH=100
 Paste vào Google Sheets để test báo cáo:
 
 **Sheet "Orders":**
+
 ```
 date,product,quantity,total,status,customer_id
 2024-01-01,Laptop Dell,1,15000000,completed,CUST001
@@ -117,11 +125,11 @@ date,product,quantity,total,status,customer_id
 
 ## 📱 URLs quan trọng
 
-- **Google Cloud Console**: https://console.cloud.google.com/
-- **Google Sheets**: https://sheets.google.com/
-- **Google Drive**: https://drive.google.com/
-- **Gmail App Passwords**: https://myaccount.google.com/apppasswords
-- **Telegram Bot API**: https://api.telegram.org/bot{TOKEN}/getUpdates
+- **Google Cloud Console**: <https://console.cloud.google.com/>
+- **Google Sheets**: <https://sheets.google.com/>
+- **Google Drive**: <https://drive.google.com/>
+- **Gmail App Passwords**: <https://myaccount.google.com/apppasswords>
+- **Telegram Bot API**: <https://api.telegram.org/bot{TOKEN}/getUpdates>
 
 ---
 ⚡ **Nếu làm theo đúng checklist này, bạn sẽ có app hoạt động trong 30 phút!**
